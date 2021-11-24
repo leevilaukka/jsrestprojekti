@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js" defer type="module"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <title>Pokemon-haku</title>
+</head>
+
+<body>
+    <header>
+        <h1>Pokemon-haku</h1>
+        <div id="ohje">
+            <p>
+                Hae pokemonia nimellä tai numerolla. <br>
+                (esim. Pikachu tai 25)
+            </p>
+        </div>
+        <form action="" id="search">
+            <label for="pokemon-name">
+                Hae pokemonia:
+            </label>
+            <input type="text" name="pokemon-name" id="pokemon-name" placeholder="Nimi tai ID" pattern="[a-zA-Z0-9]+" minlength="1" required>
+            <input type="submit" value="Hae">
+        </form>
+    </header>
+
+    <section id="pokemonInfo">
+        <header id="pokemon">
+            <img src="" alt="" id="image">
+            <h2 id="name"></h2>
+        </header>
+        <div>
+            <h2>Stats</h2>
+            <ul id="stats">
+                <!--Stats-->
+            </ul>
+        </div>
+        <div>
+            <h2>Moves</h2>
+            <ul id="moves">
+                <!--Moves-->
+            </ul>
+        </div>
+        <div>
+            <h2>Abilities</h2>
+            <ul id="abilities">
+                <!--Abilities-->
+            </ul>
+        </div>
+    </section>
+</body>
+
+</html>

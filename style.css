@@ -1,0 +1,141 @@
+html {
+    font-size: clamp(12px, calc(100vmin * 0.0148), 65535px);
+    font-family: sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --background-primary: #1b1b1b;
+    --background-secondary: #0F0F0F;
+    --text-primary: #FFF;
+    --text-secondary: #AAA;
+    --highlight: #ee1515;
+    --transparent : rgba(0,0,0,0);
+}
+
+body {
+    position: relative;
+    background-color: var(--background-primary);
+    color: var(--text-primary);
+    width: 100vw;
+    max-width: 128ch;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 2rem;
+    margin-top: 2rem;
+}
+
+header #ohje {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+header form {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+header form label {
+    font-weight: bold;
+}
+
+header form input {
+    display: block;
+    padding: 1rem 1rem;
+    border: 1px solid var(--text-secondary);
+    border-radius: 0.25rem;
+    background-color: var(--background-secondary);
+    color: var(--text-primary);
+}
+
+header form input[type="submit"] {
+    background-color: var(--highlight);
+    border: 1px solid var(--transparent);
+    font-weight: bold;
+}
+
+header form *:not(:first-child) {
+    margin-top: 0.5rem;
+}
+
+#pokemonInfo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex: 1 1 auto;
+    overflow-y: auto;
+    flex-direction: column;
+    padding: 0rem 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#pokemonInfo div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#pokemonInfo div:not(:first-child) {
+    margin-top: 2rem;
+}
+
+#pokemonInfo div ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    border: 1px solid var(--text-secondary);
+    border-radius: 0.25rem;
+}
+
+#pokemonInfo div ul li{
+    padding: 1rem 1rem;
+    list-style-type: none;
+    text-transform: capitalize;
+}
+
+#pokemonInfo div ul li:nth-child(even) {
+    background-color: var(--background-secondary);
+}
+
+#pokemon {
+    width: 100%;
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+}
+
+#pokemon #name {
+    text-transform: capitalize;
+}
+
+#pokemon img {
+    width: calc(96px * 1.5);
+}
