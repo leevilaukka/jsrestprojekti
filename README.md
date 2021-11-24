@@ -2,4 +2,4 @@
 Web-sovellusten kehittäminen Javascriptillä-kurssin toinen projekti
 
 
-Linkki sivuun: http://js-rest.leevila.fi/
+Linkki sivuun: https://js-rest.leevila.fi/
